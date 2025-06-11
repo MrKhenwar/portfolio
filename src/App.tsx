@@ -131,7 +131,7 @@ function App() {
         description:
           "This is a great initiative take by a startup for the women that are usually at home and dont have the facilites like Gym and park available so they can join a huge community of like minded women transform together and I made the website and the backend for them to help this narative!",
         image: "https://i.postimg.cc/cLfDsYqF/prz.png", // Replace with actual image path
-        link: "www.zyrax.fit",
+        link: "https://www.zyrax.fit",
       },
       {
         id: 2,
@@ -139,7 +139,7 @@ function App() {
         description:
           "This is a great initiative take by a startup for the women that are usually at home and dont have the facilites like Gym and park available so they can join a huge community of like minded women transform together and I made the website and the backend for them to help this narative!",
         image: "https://i.postimg.cc/6QjbSKxK/przylo.png",
-        link: "www.zylo.fit",
+        link: "https://www.zylo.fit",
       },
       
       {
@@ -168,6 +168,8 @@ function App() {
         <p className="text-gray-300">{project.description}</p>
         <a
           href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-4 inline-block text-blue-400 hover:underline"
         >
           View Project →
@@ -222,14 +224,24 @@ function App() {
             <div className="space-y-6">
               <div className="border-l-4 border-blue-400 pl-4">
                 <h3 className="text-xl font-semibold">Development and Sales</h3>
-                <p className="text-gray-400">Zylo Fitness, Agra</p>
+                <p className="text-gray-400">Zyrax/Zylo Fitness, Agra</p>
                 <p className="mt-2 text-gray-300">
-                  Contributed to website development and sales initiatives, gaining valuable industry experience
+                  Contributed to website and app development and sales initiatives, gaining valuable industry experience
                   and developing strong client relationship skills.
                 </p>
               </div>
             </div>
+            <div className="space-y-6">
+              <div className="border-l-4 border-blue-400 pl-4">
+                <h3 className="text-xl font-semibold">Development </h3>
+                <p className="text-gray-400">HelpIT</p>
+                <p className="mt-2 text-gray-300">
+                  Contributed to App development for helpit and app was delivered.
+                </p>
+              </div>
+            </div>
           </section>
+          
 
           <section className="bg-gray-800/50 backdrop-blur-lg rounded-xl p-8">
             <h2 className="text-3xl font-bold mb-6 flex items-center gap-2">
@@ -269,11 +281,11 @@ function App() {
                 <Phone size={20} />
                 +91 8810107282
               </a>
-              <a href="https://github.com/MrKhenwar?tab=repositories" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+              <a href="https://github.com/MrKhenwar?tab=repositories" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
                 <Github size={20} />
                 GitHub
               </a>
-              <a href="www.linkedin.com/in/vidit-raj-k-443634215" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
+              <a href="https://www.linkedin.com/in/vidit-raj-k-443634215" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-400 transition-colors">
                 <Linkedin size={20} />
                 LinkedIn
               </a>
@@ -286,4 +298,3 @@ function App() {
 }
 
 export default App;
-
